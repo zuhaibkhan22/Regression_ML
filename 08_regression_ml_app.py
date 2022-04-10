@@ -69,15 +69,14 @@ def build_model(df):
 st.write("""
 # The Machine Learning App
 In this implementation, the *RandomForestRegressor()* function is used in this app for build a regression model using the **Random Forest** algorithm.
-Try adjusting the hyperparameters!
 """)
 
 #---------------------------------#
 # Sidebar - Collects user input features into dataframe
 with st.sidebar.header('1. Upload your CSV data'):
-    uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
+    uploaded_file = st.sidebar.file_uploader("Upload your CSV file for regression problem", type=["csv"])
     st.sidebar.markdown("""
-[Example CSV input file](https://raw.githubusercontent.com/dataprofessor/data/master/delaney_solubility_with_descriptors.csv)
+[Example CSV file](https://raw.githubusercontent.com/dataprofessor/data/master/delaney_solubility_with_descriptors.csv)
 """)
 
 # Sidebar - Specify parameter settings
